@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CoinCast 📈💰
 
 A cryptocurrency price forecasting dashboard built with FastAPI, React, and Machine Learning.
@@ -103,3 +104,8 @@ curl "http://127.0.0.1:8000/api/predict?coin_id=bitcoin&horizon=7"
 ## ⚠️ Disclaimer
 
 This project is for educational/demo purposes only. Forecasts are not investment advice.
+=======
+# CoinCast
+
+A cryptocurrency price forecasting dashboard built with FastAPI, React, and Machine Learning.
+>>>>>>> a71675d (feat: add ARIMA + ensemble forecasting and expose model info in API)
