@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CoinCast 📈💰
 
 A cryptocurrency price forecasting dashboard built with FastAPI, React, and Machine Learning.
@@ -44,18 +43,20 @@ A cryptocurrency price forecasting dashboard built with FastAPI, React, and Mach
 ## ⚡ Quick Start
 
 ### 1. Clone the Repo
+
 git clone https://github.com/<your-username>/CoinCast.git
 
 cd CoinCast
 
 ### 2. Backend setup (FastAPI)
+
 cd coincast
 
 python3 -m venv .venv
 
-source .venv/bin/activate   # Mac/Linux
+source .venv/bin/activate # Mac/Linux
 
-#### # .venv\Scripts\activate    # Windows
+#### # .venv\Scripts\activate # Windows
 
 pip install -r requirements.txt
 
@@ -66,6 +67,7 @@ uvicorn backend.main:app --reload
 #### Docs 👉 http://127.0.0.1:8000/docs
 
 ### 3. Frontend setup (React + Vite)
+
 cd frontend/coincast-frontend
 
 npm install
@@ -79,16 +81,17 @@ npm run dev
 curl "http://127.0.0.1:8000/api/predict?coin_id=bitcoin&horizon=7"
 
 ### Response:
+
 {
-  "coin_id": "bitcoin",
-  "history": [
-    {"t": 1694304000000, "price": 27234.5},
-    ...
-  ],
-  "forecast": [
-    {"t": 1696896000000, "yhat": 28000.1, "yhat_lower": 26800.5, "yhat_upper": 29200.7},
-    ...
-  ]
+"coin_id": "bitcoin",
+"history": [
+{"t": 1694304000000, "price": 27234.5},
+...
+],
+"forecast": [
+{"t": 1696896000000, "yhat": 28000.1, "yhat_lower": 26800.5, "yhat_upper": 29200.7},
+...
+]
 }
 
 ## 📌 Future Improvements
@@ -104,8 +107,3 @@ curl "http://127.0.0.1:8000/api/predict?coin_id=bitcoin&horizon=7"
 ## ⚠️ Disclaimer
 
 This project is for educational/demo purposes only. Forecasts are not investment advice.
-=======
-# CoinCast
-
-A cryptocurrency price forecasting dashboard built with FastAPI, React, and Machine Learning.
->>>>>>> a71675d (feat: add ARIMA + ensemble forecasting and expose model info in API)
